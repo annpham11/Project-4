@@ -189,6 +189,11 @@ h1 {
   opacity: 1;
 }
 
+.modal-body {
+  font-family: "Roboto Slab", serif;
+  color: #5A5A5A;
+}
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;

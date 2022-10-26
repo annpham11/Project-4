@@ -3,7 +3,7 @@ import React from 'react';
 
 const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
     return (
-        <div className="movie" key={imdbID}>
+        <div className="movie" key={imdbID} data-toggle="modal" data-target="#exampleModal">
             <div>
                 <p>{Year}</p>
             </div>
@@ -15,7 +15,7 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
             <div>
                 <span>{Type}</span>
                 <h3>{Title}</h3>
-            </div>
+            </div> 
         </div>
     );
 }
