@@ -9,8 +9,6 @@ const MovieCard = ({ movie }) => {
 
     let storedMovie = watchlist.find(o => o.id === movie.imdbID);
 
-
-
     const watchlistDisabled = storedMovie ? true : false
 
     return (
@@ -28,7 +26,6 @@ const MovieCard = ({ movie }) => {
                 <button className="btn"
                     disabled={watchlistDisabled}
                     onClick={() => {
-
                         addMovieToWatchlist(movie)
                     }}>
 

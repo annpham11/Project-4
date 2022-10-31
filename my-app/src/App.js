@@ -26,6 +26,8 @@ const App = () => {
       <Route path="/" element={<Home />} /> 
       <Route path="/watched" element={<Watched />} /> 
       <Route path="/login" element={<Login />} />
+      <Route path="/watchlist" element={<Watchlist />} />
+
     </Routes>
   </GlobalProvider>
   );
