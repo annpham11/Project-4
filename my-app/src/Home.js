@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg"; 
 
 
-const API_URL = "http://www.omdbapi.com?apikey=b6003d8a"; 
+const API_URL = "https://www.omdbapi.com?apikey=b6003d8a"; 
 
 export const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,7 +38,7 @@ export const Home = () => {
   return (
 
     <div className="app">
-      <h1>WatchedList</h1>
+      <h1>Filmlogg</h1>
 
       <div className="search">
         <form onSubmit={handleFormSubmit}>

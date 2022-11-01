@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'; 
 import { GlobalContext } from './context/GlobalState';
 import { WatchMovieCard } from './WatchMovieCard';
+import "./App.css";
 
 export const Watchlist = () => {
     const { watchlist } = useContext(GlobalContext);
@@ -15,8 +16,7 @@ export const Watchlist = () => {
         </div>
 
         {watchlist.length > 0 ? (
-          <div className="movie-grid">
-            {JSON.stringify(watchlist[0])}
+          <div className="container">
             {watchlist.map(movie => (
                <WatchMovieCard movie={movie} type="watchlist"/>
             ))}
